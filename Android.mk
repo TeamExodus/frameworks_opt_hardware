@@ -38,6 +38,10 @@ default_classes :=
     $(foreach cf, $(BASE_SRC_FILES), \
         $(if $(filter $(notdir $(unique_specific_classes)), $(notdir $(cf))),, \
             $(eval default_classes += $(cf))))
+default_classes := \
+    src/org/cyanogenmod/hardware/util/FileUtils.java \
+
+$(info $(default_classes))
 
 LOCAL_SRC_FILES += $(default_classes) $(unique_specific_classes)
 
