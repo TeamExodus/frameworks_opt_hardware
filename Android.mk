@@ -40,7 +40,7 @@ default_classes :=
             $(eval default_classes += $(cf))))
 
 default_classes += \
-    src/org/cyanogenmod/hardware/util/FileUtils.java \
+    src/org/cyanogenmod/hardware/util/FileUtils.java
 
 $(info $(default_classes))
 
