@@ -42,8 +42,6 @@ default_classes :=
 default_classes += \
     src/org/cyanogenmod/hardware/util/FileUtils.java
 
-$(info $(default_classes))
-
 LOCAL_SRC_FILES += $(default_classes) $(unique_specific_classes)
 
 LOCAL_MODULE_TAGS := optional
